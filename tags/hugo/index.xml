@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Hugo on 记-记忆碎片</title><link>https://znbsf.github.io/tags/hugo/</link><description>Recent content in Hugo on 记-记忆碎片</description><generator>Hugo -- 0.146.6</generator><language>zh-cn</language><lastBuildDate>Mon, 21 Apr 2025 01:05:22 +0800</lastBuildDate><atom:link href="https://znbsf.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>使用hugo生成静态页面并自动部署githubPages的两个坑</title><link>https://znbsf.github.io/posts/hugotopages/</link><pubDate>Mon, 21 Apr 2025 01:05:22 +0800</pubDate><guid>https://znbsf.github.io/posts/hugotopages/</guid><description>&lt;p>这个博客是使用 hugo 本地 生成的静态页面，使用 github pages 部署的。
+但是在使用 hugo 生成静态页面和 github pages 部署的过程中遇到了一些坑，记录一下。
+主要是使用 chatgpt 生成的教程&lt;/p>
+&lt;p>教程原文不贴了&lt;/p>
+&lt;p>遇到的问题主要是 action 从一个仓库 复制到另一个仓库的权限问题， 需要生成key&lt;/p>
+&lt;p>还有就是hugo主题是使用的 github 上的主题， 但是没有使用 submodule 的方式引入， 直接下载到本地了。 这样在使用 action 的时候就会报错， 需要在 action 中添加一个步骤， 将主题文件夹复制到指定位置。
+然后再使用 hugo 生成静态页面。&lt;/p>
+&lt;p>然后是 md文件里 draft = false
+这个是生成静态页面的一个坑， 需要设置为 false 才能生成静态页面。&lt;/p></description></item></channel></rss>
